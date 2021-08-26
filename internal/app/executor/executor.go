@@ -22,7 +22,7 @@ const ConcurrentExecutions = 4
 // NewTemplateExecutor returns new TemplateExecutor instance
 func NewTemplateExecutor(resultRepository result.Repository) TemplateExecutor {
 	var httpConfig server.Config
-	envconfig.Process("TEMPLATEEXECUTOR", &httpConfig)
+	envconfig.Process("EXECUTOR", &httpConfig)
 
 	e := TemplateExecutor{
 		HTTPServer: server.NewServer(httpConfig),

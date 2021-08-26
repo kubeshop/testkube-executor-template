@@ -6,7 +6,7 @@ ENV GONOSUMDB=github.com/kubeshop/*
 ENV CGO_ENABLED=0 
 ENV GOOS=linux
 
-RUN cd cmd/template-executor;go build -o /app -mod mod -a .
+RUN cd cmd/executor;go build -o /app -mod mod -a .
 
 # TODO add valid dockerfile with executor
 FROM alpine
