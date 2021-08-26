@@ -13,5 +13,5 @@ FROM alpine
 RUN apk --no-cache add ca-certificates
 WORKDIR /root/
 COPY --from=0 /app /bin/app
-EXPOSE 8083
+EXPOSE 8084
 ENTRYPOINT ["/bin/app"]
