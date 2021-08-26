@@ -9,6 +9,8 @@ DATE ?= $(shell date -u --iso-8601=seconds)
 COMMIT ?= $(shell git log -1 --pretty=format:"%h")
 
 # TODO bump this port up - to be able to run multiple executors on devs machine
+# - 8082 - postman 
+# - 8083 - cypress
 run-executor: 
 	EXECUTOR_PORT=8084 go run cmd/executor/main.go
 
