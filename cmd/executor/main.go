@@ -27,7 +27,7 @@ func main() {
 		panic(err)
 	}
 
-	exec := executor.NewTemplateExecutor(result.NewMongoRespository(db))
+	exec := executor.NewExecutor(result.NewMongoRespository(db))
 	exec.Init()
 	panic(exec.Run())
 

@@ -33,8 +33,8 @@ func TestTemplateExecutor_StartExecution(t *testing.T) {
 
 }
 
-func GetTestExecutor(t *testing.T) TemplateExecutor {
-	templateExecutor := NewTemplateExecutor(&RepoMock{
+func GetTestExecutor(t *testing.T) Executor {
+	templateExecutor := NewExecutor(&RepoMock{
 		Object: kubtest.Execution{Id: "1"},
 	})
 	templateExecutor.Init()
