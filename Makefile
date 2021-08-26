@@ -1,5 +1,6 @@
 .PHONY: test cover 
 
+NAME ?= template
 BIN_DIR ?= $(HOME)/bin
 GITHUB_TOKEN ?= "SET_ME"
 USER ?= $(USER)
@@ -16,10 +17,10 @@ run-mongo-dev:
 
 
 build: 
-	go build -o $(BIN_DIR)/template-executor cmd/template-executor/main.go
+	go build -o $(BIN_DIR)/$(NAME)-executor cmd/executor/main.go
 
 docker-build-executor: 
-	docker build -t template-executor -f build/template-executor/Dockerfile .
+	docker build -t $(NAME)-executor -f build/executor/Dockerfile .
 
 install-swagger-codegen-mac: 
 	brew install swagger-codegen
