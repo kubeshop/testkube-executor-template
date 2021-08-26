@@ -1,3 +1,4 @@
+### Go template
 # Binaries for programs and plugins
 *.exe
 *.exe~
@@ -12,4 +13,16 @@
 *.out
 
 # Dependency directories (remove the comment below to include it)
-# vendor/
+vendor/
+
+### JetBrains
+.idea
+*.iml
+
+# Helm
+Chart.lock
+
+.DS_Store
+bin/
+site
+dist/
