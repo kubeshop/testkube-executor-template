@@ -47,7 +47,17 @@ spec:
 
 ## Architecture
 
-- TODO add architecture diagrams
+Template executor implement work queue on top of API REST endpoints
+Work queue implemented on top of MongoDB. You can scale workers easily on many nodes.
+
+`Kubtest` will pass particular test execution based on executor registered types (e.g. "postman/collection' or 'cypress/project')
+
+executor/server package introduce 2 endpoints 
+- first for pushing execution to queue and 
+- second for getting execution details from queue
+
+
+TODO add architecture diagrams
 
 ## API 
 
