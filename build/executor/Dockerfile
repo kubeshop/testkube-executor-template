@@ -10,8 +10,8 @@ RUN cd cmd/executor;go build -o /app -mod mod -a .
 
 # TODO add valid dockerfile with executor
 FROM alpine
-RUN apk --no-cache add ca-certificates
+RUN apk --no-cache add ca-certificates git
 WORKDIR /root/
 COPY --from=0 /app /bin/app
-EXPOSE 8083
+EXPOSE 8085
 ENTRYPOINT ["/bin/app"]
