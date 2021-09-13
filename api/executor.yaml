@@ -2,7 +2,7 @@ openapi: 3.0.1
 
 info:
   title: Kubtest Executor API
-  description: 'Kubtest provides a Kubernetes-native framework for test definition, execution and results'
+  description: 'Kubtest Executor OpenAPI spec - Kubtest provides a Kubernetes-native framework for test definition, execution and results'
   contact:
     email: kubtest@kubshop.io
   license:
