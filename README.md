@@ -21,7 +21,7 @@ Kubetest Template Executor is test executor for [testkube](https://testkube.io)
 
 # Issues and enchancements 
 
-Please follow to main testkube repository for reporting any [issues](https://github.com/kubeshop/testkube/issues) or [discussions](https://github.com/kubeshop/testkube/discussions)
+Please follow to main TestKube repository for reporting any [issues](https://github.com/kubeshop/testkube/issues) or [discussions](https://github.com/kubeshop/testkube/discussions)
 
 ## Implemention in 4 steps:
 
