@@ -17,7 +17,7 @@ New ideas should be placed in [Ideas discussion page](https://github.com/kubesho
 
 
 
-## General guidance for contributing to testkube project
+## General guidance for contributing to TestKube project
 
 You're very welcome to help in testkube development, there is a lot of incoming work to do :). 
 
