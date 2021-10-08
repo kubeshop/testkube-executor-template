@@ -1,7 +1,7 @@
 package runner
 
 import (
-	"github.com/kubeshop/testkube/pkg/api/testkube"
+	"github.com/kubeshop/testkube/pkg/api/v1/testkube"
 )
 
 func NewRunner() *ExampleRunner {
