@@ -14,7 +14,7 @@ type ExampleRunner struct {
 
 func (r *ExampleRunner) Run(execution testkube.Execution) testkube.ExecutionResult {
 	return testkube.ExecutionResult{
-		Status:    testkube.ExecutionStatusSuceess,
-		RawOutput: "exmaple test output",
+		Status: testkube.StatusPtr(testkube.SUCCESS_ExecutionStatus),
+		Output: "exmaple test output",
 	}
 }
