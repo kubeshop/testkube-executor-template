@@ -7,7 +7,7 @@ https://github.com/firstcontributions/first-contributions
 
 ## Code of Conduct
 
-This project and everyone participating in it is governed by the testkube [code of conduct](CODE_OF_CONDUCT.md)
+This project and everyone participating in it is governed by the TestKube [code of conduct](CODE_OF_CONDUCT.md)
 
 ## Have questions or idea? 
 
