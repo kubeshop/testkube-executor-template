@@ -15,7 +15,7 @@ Known vulnerabilities: ![testkube](https://snyk.io/test/github/kubeshop/testkube
 ![helm-charts](https://snyk.io/test/github/kubeshop/helm-charts/badge.svg)
 -->
                                                            
-# Welcome to testkube Template Executor
+# Welcome to TestKube Template Executor
 
 Kubetest Template Executor is test executor for [testkube](https://testkube.io)
 
