@@ -61,4 +61,4 @@ TODO add architecture diagrams
 
 ## API 
 
-Template executor implements [testkube OpenAPI for executors](https://kubeshop.github.io/testkube/openapi/#operations-tag-executor) (look at executor tag)
+Template executor implements [TestKube OpenAPI for executors](https://kubeshop.github.io/testkube/openapi/#operations-tag-executor) (look at executor tag)
