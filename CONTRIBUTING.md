@@ -21,7 +21,7 @@ New ideas should be placed in [Ideas discussion page](https://github.com/kubesho
 
 You're very welcome to help in testkube development, there is a lot of incoming work to do :). 
 
-We're trying hard to limit technical debt from the beginning so we defined simple rules into testkube repo to help with it.
+We're trying hard to limit technical debt from the beginning so we defined simple rules into TestKube repo to help with it.
 
 ### For golang based components
 
