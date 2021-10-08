@@ -32,7 +32,7 @@ We're trying hard to limit technical debt from the beginning so we defined simpl
 
 ### For infrastructure / Kubernetes based components
 
-- We're using helm charts to build and share testkube
+- We're using helm charts to build and share TestKube
 - Comment non-obvious decisions
 - Use current Helm/Kubernetes versions
 
