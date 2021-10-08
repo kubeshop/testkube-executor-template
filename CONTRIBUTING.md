@@ -1,4 +1,4 @@
-# Contribution to testkube 
+# Contribution to TestKube 
 
 Thanks for reaching out contribution 🎉
 
