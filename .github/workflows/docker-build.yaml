@@ -36,7 +36,7 @@ jobs:
         id: meta_template_executor
         uses: docker/metadata-action@v3
         with:
-          images: kubeshop/kubtest-template-executor
+          images: kubeshop/testkube-template-executor
           tags: |
             type=ref,event=branch
             type=ref,event=pr

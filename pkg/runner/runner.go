@@ -1,7 +1,7 @@
 package runner
 
 import (
-	"github.com/kubeshop/kubtest/pkg/api/kubtest"
+	"github.com/kubeshop/testkube/pkg/api/testkube"
 )
 
 func NewRunner() *ExampleRunner {
@@ -12,9 +12,9 @@ func NewRunner() *ExampleRunner {
 type ExampleRunner struct {
 }
 
-func (r *ExampleRunner) Run(execution kubtest.Execution) kubtest.ExecutionResult {
-	return kubtest.ExecutionResult{
-		Status:    kubtest.ExecutionStatusSuceess,
+func (r *ExampleRunner) Run(execution testkube.Execution) testkube.ExecutionResult {
+	return testkube.ExecutionResult{
+		Status:    testkube.ExecutionStatusSuceess,
 		RawOutput: "exmaple test output",
 	}
 }
