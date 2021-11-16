@@ -1,8 +1,0 @@
-apiVersion: executor.testkube.io/v1
-kind: Executor
-metadata:
-  name: local-postman
-spec:
-  uri: http://template-executor:8082
-  types:
-  - example/test
