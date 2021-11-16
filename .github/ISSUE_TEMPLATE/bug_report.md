@@ -20,7 +20,7 @@ Steps to reproduce the behavior:
 A clear and concise description of what you expected to happen.
 
 **Version / Cluster**
-- Which  TestKube version? 
+- Which testkube version? 
 - What Kubernetes cluster? (e.g. GKE, EKS, Openshift etc, local KinD, local Minikube)
 - What Kubernetes version?
 
