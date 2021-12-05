@@ -14,17 +14,14 @@ Executor is nothing more than program wrapped into Docker container which gets j
 
 Please follow to main TestKube repository for reporting any [issues](https://github.com/kubeshop/testkube/issues) or [discussions](https://github.com/kubeshop/testkube/discussions)
 
-## Implemention in 5 steps:
+## Implemention in several steps:
 
 1. Create new repo on top of this template 
-
-2. Implement your own Runner on top of [runner interface](https://github.com/kubeshop/testkube/blob/main/pkg/runner/interface.go
-
-3. Change Dockerfile - use base image of whatever test framework/library you want to use
-
-4. Build and push dockerfile to some repository
-
-5. Register Executor Custom Resource in your cluster 
+2. Change `go.mod` file with your path (just replace `github.com/kubeshop/testkube-executor-template` project-wise with your package path) 
+3. Implement your own Runner on top of [runner interface](https://github.com/kubeshop/testkube/blob/main/pkg/runner/interface.go
+4. Change Dockerfile - use base image of whatever test framework/library you want to use
+5. Build and push dockerfile to some repository
+6. Register Executor Custom Resource in your cluster 
 
 ```yaml
 apiVersion: executor.testkube.io/v1
@@ -37,12 +34,7 @@ spec:
   image: kubeshop/testkube-template-executor:0.0.1
   types:
   - example/test
-  volume_mount_path: /mnt/artifacts-storage
-  volume_quantity: 10Gix
-
 ```
-
-Set up volumes as in following example if you want to use artifacts storage (can be downloaded later in dashboard or by `kubectl testkube` plugin)
 
 
 ## Architecture
