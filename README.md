@@ -2,17 +2,17 @@
 
 # Welcome to TestKube Template Executor
 
-TestKube Template Executor is test executor skeleton for [TestKube](https://testkube.io).  
-You can use it as basic building blocks for created a new executor.
+TestKube Template Executor is a test executor skeleton for [TestKube](https://testkube.io).  
+You can use it as basic building blocks for creating a new executor.
 
 # What is an Executor?
 
-Executor is nothing more than a program wrapped into Docker container which gets JSON (testube.Execution) OpenAPI based document and returns stream of JSON output lines (testkube.ExecutorOutput), where each output line is simply wrapped in this JSON, like in structured logging idea. 
+Executor is nothing more than a program wrapped into Docker container which gets JSON (testube.Execution) OpenAPI based document as an input and returns a stream of JSON output lines (testkube.ExecutorOutput), where each output line is simply wrapped in this JSON, similar to the structured logging idea. 
 
 
 # Issues and enchancements 
 
-Please follow to main [TestKube repository](https://github.com/kubeshop/testkube) for reporting any [issues](https://github.com/kubeshop/testkube/issues) or [discussions](https://github.com/kubeshop/testkube/discussions)
+Please follow the main [TestKube repository](https://github.com/kubeshop/testkube) for reporting any [issues](https://github.com/kubeshop/testkube/issues) or [discussions](https://github.com/kubeshop/testkube/discussions)
 
 ## Implemention in several steps:
 
