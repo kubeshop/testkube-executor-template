@@ -2,17 +2,17 @@
 
 # Welcome to TestKube Template Executor
 
-TestKube Template Executor is test executor skeleton for [TestKube](https://testkube.io)
-You can use it as basic building blocks for new executor
+TestKube Template Executor is a test executor skeleton for [TestKube](https://testkube.io).  
+You can use it as basic building blocks for creating a new executor.
 
-# What is executor
+# What is an Executor?
 
-Executor is nothing more than program wrapped into Docker container which gets json (testube.Execution) OpenAPI based document, and returns stream of json output lines (testkube.ExecutorOutput) - each output line is simply wrapped in this JSON, like in structured logging idea. 
+Executor is nothing more than a program wrapped into Docker container which gets JSON (testube.Execution) OpenAPI based document as an input and returns a stream of JSON output lines (testkube.ExecutorOutput), where each output line is simply wrapped in this JSON, similar to the structured logging idea. 
 
 
 # Issues and enchancements 
 
-Please follow to main TestKube repository for reporting any [issues](https://github.com/kubeshop/testkube/issues) or [discussions](https://github.com/kubeshop/testkube/discussions)
+Please follow the main [TestKube repository](https://github.com/kubeshop/testkube) for reporting any [issues](https://github.com/kubeshop/testkube/issues) or [discussions](https://github.com/kubeshop/testkube/discussions)
 
 ## Implemention in several steps:
 
@@ -39,17 +39,17 @@ spec:
 
 ## Architecture
 
-Template executor offers you basic building blocks to write new executor based on testkube 
-libraries written in Go programming language, but your're not limited only to go, you can 
+This Executor template offers you basic building blocks to write a new executor based on TestKube 
+libraries written in Go programming language, but you're not limited only to Go, you can 
 write in any other programming language like Rust, Javascript, Java or Clojure.
 
-Only thing you'll need is to follow OpenAPI spec for input `testkube.Execution` 
+The only thing you'll need to do is to follow the OpenAPI spec for input `testkube.Execution` 
 (passed as first argument in JSON form) and all output should be JSON lines 
-with `testkube.ExecutorOutput` spec there should be also somewhere final 
-`ExecutorOutput` with `ExecutionResult` attached after successful (or failed) test execution.
+with `testkube.ExecutorOutput` spec.  
+You should also have a final `ExecutorOutput` with `ExecutionResult` attached somewhere after successful (or failed) test execution.
 
 Resources: 
-- [OpenaAPI spec details](https://kubeshop.github.io/testkube/openapi/)
+- [OpenAPI spec details](https://kubeshop.github.io/testkube/openapi/)
 - [Spec in YAML file](https://raw.githubusercontent.com/kubeshop/testkube/main/api/v1/testkube.yaml)
 
 Go based resources for input and output objects:
@@ -59,7 +59,7 @@ Go based resources for input and output objects:
 
 ## Examples
 
-- this template repo - is the simplest one 
+- This template repo, which is the simplest one
 - [Postman executor](https://github.com/kubeshop/testkube-executor-postman)
 - [Cypress executor](https://github.com/kubeshop/testkube-executor-cypress)
 - [Curl executor](https://github.com/kubeshop/testkube-executor-curl)
