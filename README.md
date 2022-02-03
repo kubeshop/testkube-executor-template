@@ -64,3 +64,14 @@ Go based resources for input and output objects:
 - [Cypress executor](https://github.com/kubeshop/testkube-executor-cypress)
 - [Curl executor](https://github.com/kubeshop/testkube-executor-curl)
 
+
+# Testkube 
+
+For more info go to [main testkube repo](https://github.com/kubeshop/testkube)
+
+![Release](https://img.shields.io/github/v/release/kubeshop/testkube) [![Releases](https://img.shields.io/github/downloads/kubeshop/testkube/total.svg)](https://github.com/kubeshop/testkube/tags?label=Downloads) ![Go version](https://img.shields.io/github/go-mod/go-version/kubeshop/testkube)
+
+![Docker builds](https://img.shields.io/docker/automated/kubeshop/testkube-api-server) ![Code build](https://img.shields.io/github/workflow/status/kubeshop/testkube/Code%20build%20and%20checks) ![Release date](https://img.shields.io/github/release-date/kubeshop/testkube)
+
+![Twitter](https://img.shields.io/twitter/follow/thekubeshop?style=social) ![Discord](https://img.shields.io/discord/884464549347074049)
+ #### [Documentation](https://kubeshop.github.io/testkube) | [Discord](https://discord.gg/hfq44wtR6Q) 
