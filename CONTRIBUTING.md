@@ -1,4 +1,4 @@
-# Contribution to TestKube 
+# Contribution to Testkube 
 
 Thanks for reaching out contribution 🎉
 
@@ -7,7 +7,7 @@ https://github.com/firstcontributions/first-contributions
 
 ## Code of Conduct
 
-This project and everyone participating in it is governed by the TestKube [code of conduct](CODE_OF_CONDUCT.md)
+This project and everyone participating in it is governed by the Testkube [code of conduct](CODE_OF_CONDUCT.md)
 
 ## Have questions or idea? 
 
@@ -17,11 +17,11 @@ New ideas should be placed in [Ideas discussion page](https://github.com/kubesho
 
 
 
-## General guidance for contributing to TestKube project
+## General guidance for contributing to Testkube project
 
 You're very welcome to help in testkube development, there is a lot of incoming work to do :). 
 
-We're trying hard to limit technical debt from the beginning so we defined simple rules into TestKube repo to help with it.
+We're trying hard to limit technical debt from the beginning so we defined simple rules into Testkube repo to help with it.
 
 ### For golang based components
 
@@ -32,7 +32,7 @@ We're trying hard to limit technical debt from the beginning so we defined simpl
 
 ### For infrastructure / Kubernetes based components
 
-- We're using helm charts to build and share TestKube
+- We're using helm charts to build and share Testkube
 - Comment non-obvious decisions
 - Use current Helm/Kubernetes versions
 

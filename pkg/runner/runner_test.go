@@ -13,7 +13,7 @@ func TestRun(t *testing.T) {
 		// given
 		runner := NewRunner()
 		execution := testkube.NewQueuedExecution()
-		execution.Content = testkube.NewStringScriptContent("hello I'm script content")
+		execution.Content = testkube.NewStringTestContent("hello I'm test content")
 
 		// when
 		result, err := runner.Run(*execution)
