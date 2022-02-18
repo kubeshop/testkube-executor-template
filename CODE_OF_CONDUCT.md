@@ -1,8 +1,8 @@
 # testkube (by Kubeshop) Community Code of Conduct
 
-TestKube follows the CNCF Code of Conduct. The text of the CNCF CoC is replicated below. If you notice that this is out of date, please file an issue.
+Testkube follows the CNCF Code of Conduct. The text of the CNCF CoC is replicated below. If you notice that this is out of date, please file an issue.
 
-If you notice a violation of the Code of Conduct at an event or meeting, in Slack, or in another communication mechanism, reach out to the TestKube Code of Conduct Committee. You can reach us by email at contact@kubeshop.io Your anonymity will be protected.
+If you notice a violation of the Code of Conduct at an event or meeting, in Slack, or in another communication mechanism, reach out to the Testkube Code of Conduct Committee. You can reach us by email at contact@kubeshop.io Your anonymity will be protected.
 
 # CNCF Community Code of Conduct v1.0
 
@@ -25,6 +25,6 @@ Project maintainers have the right and responsibility to remove, edit, or reject
 
 This code of conduct applies both within project spaces and in public spaces when an individual is representing the project or its community.
 
-Instances of abusive, harassing, or otherwise unacceptable behavior in TestKube may be reported by contacting the TestKube Code of Conduct Committee via contact@kubeshop.io. 
+Instances of abusive, harassing, or otherwise unacceptable behavior in Testkube may be reported by contacting the Testkube Code of Conduct Committee via contact@kubeshop.io. 
 
 This Code of Conduct is adapted from the Contributor Covenant (https://contributor-covenant.org), version 1.2.0, available at https://contributor-covenant.org/version/1/2/0/

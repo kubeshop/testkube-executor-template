@@ -27,13 +27,13 @@ func (r *ExampleRunner) Run(execution testkube.Execution) (result testkube.Execu
 
 	if execution.Content.IsFile() {
 		output.PrintEvent("using file", execution)
-		// TODO implement file based script content for string, git-file, file-uri
+		// TODO implement file based test content for string, git-file, file-uri
 		//      or remove if not used
 	}
 
 	if execution.Content.IsDir() {
 		output.PrintEvent("using dir", execution)
-		// TODO implement file based script content for git-dir
+		// TODO implement file based test content for git-dir
 		//      or remove if not used
 	}
 
