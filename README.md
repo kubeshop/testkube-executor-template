@@ -1,8 +1,8 @@
-![Testkube Logo](https://raw.githubusercontent.com/kubeshop/testkube/main/assets/logo-dark-text-full.png)
+![Testkube Logo](https://raw.githubusercontent.com/kubeshop/testkube/main/assets/testkube-color-gray.png)
 
-# Welcome to Testkube Template Executor
+# Welcome to TestKube Template Executor
 
-Testkube Template Executor is a test executor skeleton for [Testkube](https://testkube.io).  
+TestKube Template Executor is a test executor skeleton for [TestKube](https://testkube.io).  
 You can use it as basic building blocks for creating a new executor.
 
 # What is an Executor?
@@ -12,7 +12,7 @@ Executor is nothing more than a program wrapped into Docker container which gets
 
 # Issues and enchancements 
 
-Please follow the main [Testkube repository](https://github.com/kubeshop/testkube) for reporting any [issues](https://github.com/kubeshop/testkube/issues) or [discussions](https://github.com/kubeshop/testkube/discussions)
+Please follow the main [TestKube repository](https://github.com/kubeshop/testkube) for reporting any [issues](https://github.com/kubeshop/testkube/issues) or [discussions](https://github.com/kubeshop/testkube/discussions)
 
 ## Implemention in several steps:
 
@@ -39,7 +39,7 @@ spec:
 
 ## Architecture
 
-This Executor template offers you basic building blocks to write a new executor based on Testkube 
+This Executor template offers you basic building blocks to write a new executor based on TestKube 
 libraries written in Go programming language, but you're not limited only to Go, you can 
 write in any other programming language like Rust, Javascript, Java or Clojure.
 
