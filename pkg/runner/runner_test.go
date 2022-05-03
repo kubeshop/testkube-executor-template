@@ -20,7 +20,7 @@ func TestRun(t *testing.T) {
 
 		// then
 		assert.NoError(t, err)
-		assert.Equal(t, result.Status, testkube.ExecutionStatusSuccess)
+		assert.Equal(t, result.Status, testkube.ExecutionStatusPassed)
 	})
 
 }
