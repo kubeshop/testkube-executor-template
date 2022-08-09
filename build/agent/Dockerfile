@@ -11,4 +11,7 @@ FROM alpine
 RUN apk --no-cache add ca-certificates git
 WORKDIR /root/
 COPY --from=0 /runner /bin/runner
+
+USER 1001
+
 ENTRYPOINT ["/bin/runner"]
