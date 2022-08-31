@@ -4,6 +4,7 @@ import (
 	"github.com/kubeshop/testkube/pkg/api/v1/testkube"
 	"github.com/kubeshop/testkube/pkg/executor/content"
 	"github.com/kubeshop/testkube/pkg/executor/output"
+	"github.com/kubeshop/testkube/pkg/executor/secret"
 )
 
 func NewRunner() *ExampleRunner {
@@ -21,7 +22,7 @@ func (r *ExampleRunner) Run(execution testkube.Execution) (result testkube.Execu
 
 	// use `execution.Variables` for variables passed from Test/Execution
 	// variables of type "secret" will be automatically decoded
-
+	secret.NewEnvManager().GetVars(execution.Variables)
 	path, err := r.Fetcher.Fetch(execution.Content)
 	if err != nil {
 		return result, err
