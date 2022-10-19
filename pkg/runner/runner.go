@@ -1,8 +1,6 @@
 package runner
 
 import (
-	"fmt"
-
 	"github.com/kubeshop/testkube/pkg/api/v1/testkube"
 	"github.com/kubeshop/testkube/pkg/executor/content"
 	"github.com/kubeshop/testkube/pkg/executor/output"
@@ -42,12 +40,6 @@ func (r *ExampleRunner) Run(execution testkube.Execution) (result testkube.Execu
 		output.PrintEvent("using dir", execution)
 		// TODO implement file based test content for git-dir
 		//      or remove if not used
-	}
-
-	// add configuration files
-	err = content.PlaceFiles(execution.CopyFiles)
-	if err != nil {
-		return result.Err(fmt.Errorf("could not place config files: %w", err)), nil
 	}
 
 	// TODO run executor here
