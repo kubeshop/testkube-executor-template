@@ -4,6 +4,7 @@ import (
 	"github.com/kubeshop/testkube/pkg/api/v1/testkube"
 	"github.com/kubeshop/testkube/pkg/executor/content"
 	"github.com/kubeshop/testkube/pkg/executor/output"
+	"github.com/kubeshop/testkube/pkg/executor/runner"
 	"github.com/kubeshop/testkube/pkg/executor/secret"
 )
 
@@ -52,4 +53,9 @@ func (r *ExampleRunner) Run(execution testkube.Execution) (result testkube.Execu
 		Status: testkube.ExecutionStatusPassed,
 		Output: "exmaple test output",
 	}, nil
+}
+
+// GetType returns runner type
+func (r *ExampleRunner) GetType() runner.Type {
+	return runner.TypeMain
 }
