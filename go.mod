@@ -1,4 +1,4 @@
-module github.com/kubeshop/testkube-executor-template
+module github.com/chooco13/testkube-executor-playwright
 
 go 1.18
 
