@@ -10,6 +10,7 @@ import (
 	"github.com/kubeshop/testkube/pkg/api/v1/testkube"
 	"github.com/kubeshop/testkube/pkg/executor"
 	"github.com/kubeshop/testkube/pkg/executor/content"
+	"github.com/kubeshop/testkube/pkg/executor/runner"
 )
 
 type Params struct {
@@ -31,9 +32,8 @@ func NewPlaywrightRunner() (*PlaywrightRunner, error) {
 
 // PlaywrightRunner - implements runner interface used in worker to start test execution
 type PlaywrightRunner struct {
-	Params     Params
-	Fetcher    content.ContentFetcher
-	dependency string
+	Params  Params
+	Fetcher content.ContentFetcher
 }
 
 func (r *PlaywrightRunner) Run(execution testkube.Execution) (result testkube.ExecutionResult, err error) {
@@ -81,4 +81,9 @@ func (r *PlaywrightRunner) Run(execution testkube.Execution) (result testkube.Ex
 		Status: testkube.ExecutionStatusPassed,
 		Output: string(out[:]),
 	}, nil
+}
+
+// GetType returns runner type
+func (r *PlaywrightRunner) GetType() runner.Type {
+	return runner.TypeMain
 }
