@@ -31,17 +31,12 @@ func (r *ExampleRunner) Run(execution testkube.Execution) (result testkube.Execu
 
 	output.PrintEvent("created content path", path)
 
-	if execution.Content.IsFile() {
-		output.PrintEvent("using file", execution)
-		// TODO implement file based test content for string, git-file, file-uri
-		//      or remove if not used
-	}
+	output.PrintEvent("using", execution)
+	// TODO implement file based test content for string, git-file, file-uri, git
+	//      or remove if not used
 
-	if execution.Content.IsDir() {
-		output.PrintEvent("using dir", execution)
-		// TODO implement file based test content for git-dir
-		//      or remove if not used
-	}
+	// TODO implement file based test content for git-dir, git
+	//      or remove if not used
 
 	// TODO run executor here
 
