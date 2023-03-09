@@ -1,6 +1,8 @@
 package runner
 
 import (
+	"os"
+
 	"github.com/kubeshop/testkube/pkg/api/v1/testkube"
 	"github.com/kubeshop/testkube/pkg/executor/content"
 	"github.com/kubeshop/testkube/pkg/executor/env"
@@ -31,15 +33,20 @@ func (r *ExampleRunner) Run(execution testkube.Execution) (result testkube.Execu
 
 	output.PrintEvent("created content path", path)
 
-	if execution.Content.IsFile() {
+	fileInfo, err := os.Stat(path)
+	if err != nil {
+		return result, err
+	}
+
+	if !fileInfo.IsDir() {
 		output.PrintEvent("using file", execution)
-		// TODO implement file based test content for string, git-file, file-uri
+		// TODO implement file based test content for string, git-file, file-uri, git
 		//      or remove if not used
 	}
 
-	if execution.Content.IsDir() {
+	if fileInfo.IsDir() {
 		output.PrintEvent("using dir", execution)
-		// TODO implement file based test content for git-dir
+		// TODO implement file based test content for git-dir, git
 		//      or remove if not used
 	}
 
