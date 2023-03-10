@@ -12,7 +12,7 @@ import (
 
 func NewRunner() *ExampleRunner {
 	return &ExampleRunner{
-		Fetcher: content.NewFetcher(""),
+		Fetcher: content.NewFetcher(os.Getenv("RUNNER_DATADIR")),
 	}
 }
 
